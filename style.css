@@ -1,0 +1,38 @@
+
+    body {
+        font-family:Arial, sans-serif;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: rgb(243, 69, 69);
+        margin-bottom: 40px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+
+    select {
+        padding: 10px;
+        font-size: 16px;
+        width: 50%;
+        box-sizing: border-box;
+        border: 1px solid rgb(30, 29, 29);
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        background-color: blue;
+        color: rgb(229, 223, 223);
+        padding: 10px 10px;
+        border: 1px;
+        cursor: pointer;
+    }
