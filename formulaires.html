@@ -7,28 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire html</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <form action="mapage">
     <h1>Formulaire</h1>
 
-    <label> Prénom</label>
+    <label> Prénom *</label>
     <br>
-    <input type="text">
+    <input type="text" placeholder="prénom" required >
 
     <br>
-    <label>Nom</label>
+    <label>Nom *</label>
     <br>
-    <input type="text">
+    <input type="text" placeholder="nom" required >
 
     <br>
-    <label> Age</label>
+    <label> Age *</label>
     <br>
-    <input type="text" id="age" min="18" max="110">
+    <input type="number" id="age" min="18" max="110" placeholder="age">
 
 
     <br>
-    <label>Choisissez votre Sexe</label><br>
+    <label>Choisissez votre Sexe </label><br>
     <select id="Sexe">
         <option value="Sexe">---</option>
         <option value="ville 1">Homme</option>
@@ -37,9 +41,9 @@
     </select>
     <br>
 
-    <label> Address mail</label>
+    <label> Address mail *</label>
     <br>
-    <input type="email" name="user_email">
+    <input type="email" name="user_email" placeholder="email" required>
     <br>
     <label>Address Postal</label>
     <br>
@@ -106,7 +110,10 @@
     <label>Date de validité du passeport</label><br>
     <input type="date">
     <br>
+   <label>Laissez votre Message</label><br> 
+    <textarea name="text" id="text" cols="30" rows="10"></textarea><br>
     <button type="submit">Valider</button>
+</form>
 </body>
 
 </html>
